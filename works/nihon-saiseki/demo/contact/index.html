@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name=”robots” content=”noindex” />
+<meta name="description" content="日本砕石株式会社「お問い合わせ」のページです。" />
+<title>お問い合わせ｜日本砕石株式会社</title>
+<link rel="shortcut icon" href="../favicon.ico" />
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/header.css">
+
+<!-- ↓webフォント -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@600&Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+
+<script src="../js/jquery-2.1.3.min.js"></script>
+<script src="../js/common.js"></script>
+  
+<!-- ↓viewport -->
+<script>
+  var ua = navigator.userAgent;
+  if((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)){
+      $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
+  } else {
+      $('head').prepend('<meta name="viewport" content="width=1250">');
+  }
+</script>
+<link rel="stylesheet" href="../form/mfp.statics/mailformpro.css">
+<link rel="stylesheet" href="css/style.css" />
+<!-- InstanceEndEditable -->
+</head>
+
+<body class="bg-gray-left">
+  <?php include("../header.php"); ?>
+  
+<main class="mainContainer">
+  
+  <div class="l-inner-small">
+    <div class="textCenter">
+      <div class="c-ttlh2 center">
+        <p class="eng">contact</p>
+        <h2>お問い合わせ</h2>
+      </div>
+    </div>
+  </div>
+
+  <section class="l-secCont">
+    <div class="l-secCont">
+      <div class="l-inner-small">
+        <div class="l-secCont__box">
+
+          <form id="mailformpro" action="../form/mailformpro/mailformpro.cgi" method="POST">
+            <div class="mfp_phase">
+
+              <dl class="mailform">
+                <dt class="mfp"><span class="optionally">任意</span>会社名</dt>
+                <dd class="mfp"><span class="exam">【全角】例：日本砕石株式会社</span><br>
+                  <input type="text" name="会社名" />
+                </dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>お名前</dt>
+                <dd class="mfp"><span class="exam">【全角】例：佐藤　太郎</span>
+                  <input type="hidden" name="お名前" data-unjoin="姓名+（+フリガナ+）" value="" /><br>
+                  <input type="text" name="姓名" />
+                </dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>フリガナ</dt>
+                <dd class="mfp"><span class="exam">【全角】例：サトウ　タロウ</span><br>
+                  <input type="text" name="フリガナ" data-charcheck="kana" required="required" /></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="optionally">任意</span>住所</dt>
+                <dd class="mfp">
+                  〒<input type="hidden" name="ご住所" data-join="〒+郵便番号+\n+都道府県+市区町村+丁目番地+部屋" value=""/>
+                  <input type="text" name="郵便番号" data-address="都道府県,市区町村,市区町村" class="postNum"/><br>
+                  <p class="mb15"><span class="example">郵便番号を入力しご住所をお選びください。数字のみ入力ください。<br>（例）4561234</span><br></p>
+                  <span class="example">都道府県</span>
+                  <input type="text" name="都道府県" />
+                  <br>
+                  <span class="example">市区町村</span>
+                  <input type="text" name="市区町村" />
+                  <br>
+                  <span class="example">丁目番地</span>
+                  <input type="text" name="丁目番地" />
+                  <br>
+                  <span class="example">マンション・アパート名・お部屋番号</span>
+                  <input type="text" name="部屋" />
+                </dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>電話番号（携帯可）</dt>
+                <dd class="mfp"><span class="exam">【半角数字】例：052-123-4567</span><br>
+                  <input type="text" name="電話番号" required="required" /></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="optionally">任意</span>FAX番号</dt>
+                <dd class="mfp"><span class="exam">【半角数字】例：052-123-4567</span><br>
+                  <input type="text" name="FAX番号"></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>メールアドレス（携帯可）</dt>
+                <dd class="mfp"><span class="exam">【半角英数字】</span><br>
+                  <input type="text" name="email" size="60" required="required" /></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>確認のためもう一度</dt>
+                <dd class="mfp"><span class="exam">【半角英数字】</span><br>
+                  <input type="text" name="confirm_email" data-post-disable="1" size="60" required="required" /></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="optionally">任意</span>お問い合わせ内容</dt>
+                <dd class="mfp"><textarea name="お問い合わせ内容" rows="20" cols="60" ></textarea></dd>
+              </dl>
+              <dl class="mailform">
+                <dt class="mfp"><span class="must">必須</span>送信確認</dt>
+                <dd class="mfp"><label><input type="checkbox" required="required" data-exc="1" name="送信確認" value="送信チェック済み" />「<a href="../privacy/" class="txt">個人情報について</a>」に同意頂き、上記送信内容を確認したらチェックを入れてください</label></dd>
+              </dl>
+              <!-- <div class="mfp_buttons">
+                <button type="button">確認画面へ</button>
+                <button type="reset">リセットする</button>
+              </div> -->
+            </div>
+          </form>
+        </div><!-- /.l-secCont__box -->
+      </div><!-- /.l-inner -->
+    </div><!-- /.l-secCont -->
+  </section>
+
+</main>
+
+<?php include("../footer.php"); ?>
+  
+<script src="../js/menu.js"></script>
+</body>
+  
+</html>

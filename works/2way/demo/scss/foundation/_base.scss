@@ -1,0 +1,30 @@
+/*==================
+base.scss
+====================*/
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #2a2a2a;
+  font-family: 'Roboto','Noto Sans JP', sans-serif;
+  overflow: auto!important;
+
+  @include pc {
+    min-width: 1200px;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.font-owd {
+  font-family: 'Oswald', sans-serif;
+}
+
+hr {
+  border-top-width: 3px;
+  border-color: $color-black;
+}

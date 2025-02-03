@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*お問い合わせページ style.css*/
+
+/*----------------------------------------
+  mailformpro.css上書き
+----------------------------------------*/
+
+.mailform .mfp span.must,
+.mailform .mfp span.optionally {
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+form#mailformpro dl dt {
+    color: #0cb59b;
+    font-weight: 500;
+}
+form#mailformpro dl dd {
+    border-bottom: solid 2px #dcdcdc;
+    padding: 2em;
+}
+input,textarea {
+    background: #e6e6e6;
+    border: none;
+}
+.mfp_element_submit, .mfp_element_reset, .mfp_element_button {
+    background: #52bbab;
+    color: #fff;
+    border: none;
+}
+
+@media print, screen and (min-width: 769px){
+    .mailform .mfp,
+    .mailform .mfp span,
+    .mailform .mfp label,
+    .mailform .mfp a.txt{
+        /* font-size: 0.9rem; */
+    }
+    form#mailformpro dl dt {
+        border-bottom: solid 2px #0cb59b;
+        width: 27%;
+        padding: 2em 1em;
+    }
+    form#mailformpro dl dd {
+        width: 73%;
+    }
+    form#mailformpro dl:last-of-type {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .bg-gray-left::after {
+        content: none;
+    }
+    form#mailformpro dl dt {
+        padding: 1em;
+    }
+    form#mailformpro dl dd {
+        padding: 1em;
+    }
+    .mfp_element_text, .mfp_element_number, .mfp_element_select-one, .mfp_element_email, .mfp_element_tel, .mfp_element_textarea, .mfp_element_date {
+        width: 100%;
+    }
+    .mailform .mfp input.postNum {
+        width: 80%;
+    }
+}
+

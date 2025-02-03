@@ -1,0 +1,32 @@
+
+/*==================
+mixin.scss
+====================*/
+
+
+$bp-pc: 769px;
+$bp-sp: 768px;
+
+$mainColor: #649930;
+$subColor: #FF4E00;
+$color-yellow: #F3D200;
+$color-black: #2a2a2a;
+$color-palegreen: #EAF5E0;
+
+@mixin sp {
+  @media only screen and (max-width: ($bp-sp)) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media only screen and (min-width: ($bp-pc)) {
+    @content;
+  }
+}
+
+@mixin pc-narrow {
+  @media (max-width: 1199px) and (min-width: ($bp-pc)) {
+    @content;
+  }
+}

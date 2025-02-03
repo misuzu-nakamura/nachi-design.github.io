@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY SCRAPBOOK by Nachi design｜webデザイナーnachiのポートフォリオ</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <!-- css -->
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="css/app.css">
+  <!-- web font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+  href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+  rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/629310e357.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ローディングオーバーレイ -->
+  <div class="l-loading-overlay"></div>
+  <header>
+    <div class="l-header">
+      <a href="./" class="l-header__logo">
+        <h1><img src="images/logo_white.svg" alt=""></h1>
+      </a>
+      <!-- ハンバーガーボタン -->
+      <div class="l-header__hb-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <!-- ハンバーガー内 -->
+      <div class="l-header__hb-container">
+        <div class="l-header__hb-container__img">
+          <picture>
+            <source srcset="images/img-navi_sp.webp" media="(max-width: 768px)">
+            <img src="images/img-navi.webp" alt="">
+          </picture>
+        </div>
+        <nav class="l-header__nav">
+          <ul>
+            <li class="l-header__nav__item fadeDownTrigger">
+              <a href="works/" class="l-header__nav__link"><span class="font-eb-gar l-header__nav__link__en">WORKS</span><span class="l-header__nav__link__jp">制作実績</span></a>
+              <a href="works/index.html?tab=web" class="l-header__nav__child font-eb-gar">Web design</a>
+              <a href="works/index.html?tab=graph" class="l-header__nav__child font-eb-gar">Graphic design</a>
+              <a href="works/index.html?tab=illust" class="l-header__nav__child font-eb-gar">Illustration</a>
+            </li>
+            <li class="l-header__nav__item fadeDownTrigger delay1">
+              <a href="./#profile" class="l-header__nav__link"><span class="font-eb-gar l-header__nav__link__en">PROFILE</span><span class="l-header__nav__link__jp">プロフィール</span></a>
+            </li>
+            <li class="l-header__nav__item fadeDownTrigger delay2">
+              <a href="https://forms.gle/RBAFZd1sPAwpuSv8A" target="_blank" class="l-header__nav__link"><span class="font-eb-gar l-header__nav__link__en">CONTACT</span><span class="l-header__nav__link__jp">お問い合わせ</span></a>
+            </li>
+            <li class="fadeDownTrigger delay3">
+              <a href="https://www.instagram.com/nachichi_illustration?igsh=MXNkaDZ2djcwa2NzMg%3D%3D&utm_source=qr" target="_blank" class="l-header__nav__btn"><i
+                class="fa-brands fa-instagram"></i><span class="font-eb-gar">INSTAGRAM</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="l-header__copyright font-eb-gar-italic u-sp-none--small">&copy;Nachi design 2025 All Rights Reserved.</p>
+    </div>
+  </header>
+  <main class="l-main">
+
+    <div class="p-top-page">
+      <section class="p-fv">
+        <p class="p-fv__jp-ttl">わたしのデザイン帳</p>
+        <h2 class="p-fv__ttl font-eb-gar">MY SCRAPBOOK</h2>
+        <p class="p-fv__sub-ttl  font-eb-gar">by Nachi design</p>
+        <figure class="p-fv__img"><img src="images/img-fv.webp" alt=""></figure>
+      </section>
+      <section class="p-intro">
+        <div class="l-container">
+          <div class="p-intro__text fadeUpTrigger">
+            <div class="u-tac">
+              <p>ここに掲載しているデザインやイラストはすべて<br>
+                丹精込めてつくりあげた<br class="u-pc-none">わたしの「お気に入り」です。<br>
+                自分のつくったものが、誰かを助け、<br class="u-pc-none">役に立つものとなってほしい。<br>
+                一緒に「お気に入り」を増やしていけるよう、<br>
+                丁寧に真剣に取り組ませていただきます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="p-works">
+        <div class="p-works__sec-ttl">
+          <div class="l-container">
+            <p class="c-sec-ttl-en font-eb-gar">WORKS</p>
+            <h3 class="c-sec-ttl-jp">制作実績</h3>
+          </div>
+        </div>
+        <div class="p-works__wrapper">
+          <div class="p-works__nav">
+            <ul class="p-works__nav__list">
+              <li><a href="#works-web" class="p-works__nav__link font-eb-gar is-active">WEB DESIGN</a></li>
+              <li><a href="#works-graphic" class="p-works__nav__link font-eb-gar">GRAPHIC DESIGN</a></li>
+              <li><a href="#works-illust" class="p-works__nav__link font-eb-gar">ILLUSTRATION</a></li>
+            </ul>
+          </div>
+          <div class="p-works__main">
+            <!-- web design -->
+            <div class="p-works__container" id="works-web">
+              <div class="p-works__container__ttl fadeUpTrigger">
+                <p class="p-works__container__ttl__en font-eb-gar">WEB DESIGN</p>
+                <h3 class="p-works__container__ttl__jp">Webデザイン・サイト制作</h3>
+              </div>
+              <div class="p-works__container__desc fadeUpTrigger">
+                <figure class="p-works__container__desc__img"><img src="images/works/hd-design/img-mockup-tp.webp" alt=""></figure>
+                <div class="p-works__container__desc__text">
+                  <p>デザインからコーディングまで一貫して行います。<br>
+                    ユーザー目線の使い勝手やデザイン性と、運営側目線の保守性やSEO対策を両立したサイトづくりを目指しています。</p>
+                    <p class="c-text-comment">（※サーバーの新規ご契約、サーバー管理は行っておりません。）</p>
+                  </p>
+                  <div class="p-works__container__desc__skill u-mat2">
+                    <p class="p-works__container__desc__skill__head">使用可能アプリケーション・言語</p>
+                    <p>Photoshop / Illustrator / XD / figma</p>
+                    <p>HTML / SCSS / JavaScript / Laravel / GitHub / Wordpress</p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <ul class="p-works__container__list">
+                <li class="p-works__container__item fadeUpTrigger">
+                  <a href="works/hd-design/index.html" class="p-works__container__item__link">
+                    <figure class="c-hov-img">
+                      <img src="images/works/hd-design/img-mockup.webp" alt="">
+                    </figure>
+                    <h4 class="p-works__container__item__ttl">株式会社S様 / 注文住宅事業LP</h4>
+                    <ul class="p-works__container__item__tag-list">
+                      <li class="p-works__container__item__tag-item">デザイン</li>
+                      <li class="p-works__container__item__tag-item">コーディング</li>
+                    </ul>
+                  </a>
+                </li>
+                <li class="p-works__container__item fadeUpTrigger delay1-pc">
+                  <img src="https://placehold.jp/1120x720.png" alt="">
+                  <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+                  <ul class="p-works__container__item__tag-list">
+                    <li class="p-works__container__item__tag-item">デザイン</li>
+                    <li class="p-works__container__item__tag-item">コーディング</li>
+                  </ul>
+                </li>
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="https://placehold.jp/1120x720.png" alt="">
+                  <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+                  <ul class="p-works__container__item__tag-list">
+                    <li class="p-works__container__item__tag-item">デザイン</li>
+                    <li class="p-works__container__item__tag-item">コーディング</li>
+                  </ul>
+                </li>
+                <li class="p-works__container__item fadeUpTrigger delay1-pc">
+                  <img src="https://placehold.jp/1120x720.png" alt="">
+                  <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+                  <ul class="p-works__container__item__tag-list">
+                    <li class="p-works__container__item__tag-item">デザイン</li>
+                    <li class="p-works__container__item__tag-item">コーディング</li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="p-works__container__btn">
+                <a href="works/index.html?tab=web" class="c-btn c-btn-style1 font-eb-gar">MORE</a>
+              </div>
+            </div>
+
+            <div class="p-works__container" id="works-graphic">
+              <div class="p-works__container__ttl fadeUpTrigger">
+                <p class="p-works__container__ttl__en font-eb-gar">GRAPHIC</p>
+                <h3 class="p-works__container__ttl__jp">グラフィックデザイン</h3>
+              </div>
+              <div class="p-works__container__desc fadeUpTrigger">
+                <figure class="p-works__container__desc__img"><img src="images/works/img-graphic-main.webp" alt=""></figure>
+                <div class="p-works__container__desc__text">
+                  <p class="u-mab2">WebサイトやWeb広告で使用するバナーを初め、チラシ・企業パンフレット・名刺などの印刷物も制作経験があります。印刷データの作成、入稿もお任せください。
+                  </p>
+                  <div class="p-works__container__desc__skill">
+                    <p class="p-works__container__desc__skill__head">使用可能アプリケーション</p>
+                    <p>
+                      Photoshop / Illustrator / figma / canva</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="p-works__container__list p-works__container__list--top">
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="images/works/graphic/thumbs-01.jpg" alt="">
+                </li>
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="images/works/graphic/thumbs-04.jpg" alt="">
+                </li>
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="images/works/graphic/thumbs-05.jpg" alt="">
+                </li>
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="images/works/graphic/thumbs-06.jpg" alt="">
+                </li>
+              </ul>
+              <div class="p-works__container__btn">
+                <a href="works/index.html?tab=graph" class="c-btn c-btn-style1 font-eb-gar">MORE</a>
+              </div>
+            </div>
+
+            <div class="p-works__container" id="works-illust">
+              <div class="p-works__container__ttl fadeUpTrigger">
+                <p class="p-works__container__ttl__en font-eb-gar">ILLUSTRATION</p>
+                <h3 class="p-works__container__ttl__jp">イラスト制作</h3>
+              </div>
+              <div class="p-works__container__desc fadeUpTrigger">
+                <figure class="p-works__container__desc__img"><img src="images/works/img-illust-main.webp" alt="">
+                </figure>
+                <div class="p-works__container__desc__text">
+                  <p class="u-mab2">透明水彩とiPadで、アナログとデジタルどちらも描きます。
+                    透明水彩では優しいタッチの猫や食べ物、花のイラストを。
+                    デジタルでは猫をキャラクター化したLINEスタンプや、Web・印刷物に使う挿絵、マンガなどを描きます。</p>
+                  <div class="p-works__container__desc__skill">
+                    <p class="p-works__container__desc__skill__head">使用画材・アプリケーション</p>
+                    <p>透明水彩 / procreate / clip studio paint / canva / adobe fresco / Illustrator / Photoshop</p>
+                  </div>
+                </div>
+              </div>
+              <ul class="p-works__container__list">
+                <li class="p-works__container__item fadeUpTrigger">
+                  <img src="https://placehold.jp/1120x720.png" alt="">
+                </li>
+              </ul>
+              <div class="p-works__container__btn">
+                <a href="works/index.html?tab=illust" class="c-btn c-btn-style1 font-eb-gar">MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="c-pallarax-bg p-pallarax--top">
+        <div class="c-pallarax-bg__inner">
+          <div class="c-pallarax-bg__img"></div>
+        </div>
+      </div>
+      <section class="p-profile" id="profile">
+        <div class="l-container">
+          <div class="p-profile__wrapper">
+            <figure class="p-profile__img fadeUpTrigger"><img src="images/img-profile.webp" alt="プロフィール"></figure>
+            <div class="p-profile__text fadeUpTrigger delay1-pc">
+              <div class="p-profile__text__ttl">
+                <p class="c-sec-ttl-en font-eb-gar">PROFILE</p>
+                <h3 class="c-sec-ttl-jp">プロフィール</h3>
+              </div>
+              <p class="p-profile__text__name">なかむら みすず (nachi)</p>
+              <p class="font-eb-gar-italic">nakamura misuzu</p>
+              <p class="p-profile__text__desc">愛知県出身。大学では教育学部で音楽教育を専攻し、卒業後小学校教諭として4年間勤めました。<br>
+                Webデザイナーに転身後、様々なジャンルのサイト制作や印刷物のデザインに携わってきました。デザインからコーディングまで一貫して行い、現在6年目になります。<br>
+                趣味は水彩イラスト、食、旅。<br>
+                三毛猫の「なちち」と暮らしており、大の猫好きです。猫のイラストを中心に描きます。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 共通 -->
+      <section class="l-contact">
+        <div class="l-contact__wrapper">
+          <a href="https://www.instagram.com/nachichi_illustration?igsh=MXNkaDZ2djcwa2NzMg%3D%3D&utm_source=qr" target="_blank" class="l-contact__box">
+            <p class="l-contact__box__en-ttl l-contact__box__en-ttl--insta font-eb-gar"><i
+                class="fa-brands fa-instagram"></i>INSTAGRAM</p>
+            <h3>インスタグラム</h3>
+            <p class="l-contact__box__desc">イラストを掲載しています。ぜひご覧ください</p>
+          </a>
+          <a href="https://forms.gle/RBAFZd1sPAwpuSv8A" target="_blank" class="l-contact__box">
+            <p class="l-contact__box__en-ttl font-eb-gar">CONTACT</p>
+            <h3>お問い合わせ</h3>
+            <p class="l-contact__box__desc">土日祝を除く2営業日以内に返信します</p>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="l-footer">
+      <p class="l-footer__logo"><img src="images/logo_brown.svg" alt=""></p>
+      <p class="l-footer__copyright font-eb-gar-italic">&copy;Nachi design 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // DOM読み込み後に実行
+    window.addEventListener("scroll", function () {
+      sectionFocus();
+    });
+
+    /**
+     * 表示しているセクションのタイトルにis-activeを付与するモジュール
+     */
+    const sectionFocus = function () {
+      // window.addEventListener("load", handleScroll);
+      window.addEventListener("scroll", handleScroll);
+      // window.addEventListener("resize", handleScroll);
+
+      function handleScroll() {
+        // console.log("scroll");
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const sections = document.querySelectorAll('.p-works__container');
+
+        sections.forEach(function (section) {
+          const offsetTop = section.getBoundingClientRect().top + scrollTop;
+          const id = section.getAttribute('id');
+          const links = document.querySelectorAll(`.p-works__nav__link[href*="${id}"]`);
+
+          links.forEach(function (link) {
+            if (scrollTop > offsetTop - windowHeight + (windowHeight / 2.3)) {
+              document.querySelectorAll(".p-works__nav__link").forEach(link => link.classList.remove("is-active"));
+              link.classList.add("is-active");
+            } else {
+              link.classList.remove("is-active");
+            }
+          });
+        });
+      }
+    }
+  </script>
+
+  <!-- common.js -->
+  <script src="js/common.js"></script>
+</body>
+
+</html>
