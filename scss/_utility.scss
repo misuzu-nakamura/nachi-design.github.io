@@ -1,0 +1,126 @@
+/*----------------
+
+utility.scss
+
+----------------*/
+/*--------------------------------
+margin,padding
+--------------------------------*/
+/*margin-top 1vh ~ 20vh*/
+/*mat1 - mat20*/
+@for $i from 0 through 20 {
+    .u-mat#{$i} {
+        margin-top: #{$i}vh !important;
+    }
+}
+
+/*margin-bottom 1vh ~ 20vh*/
+/*mab1 - mab20*/
+@for $i from 0 through 20 {
+    .u-mab#{$i} {
+        margin-bottom: #{$i}vh !important;
+    }
+}
+
+/*margin-right 1rem ~ 10rem*/
+/*mar1 - mar10*/
+@for $i from 0 through 10 {
+    .u-mar#{$i} {
+        margin-right: #{$i}rem !important;
+    }
+}
+
+/*margin-left 1rem ~ 10rem*/
+/*mal1 - mal10*/
+@for $i from 0 through 10 {
+    .u-mal#{$i} {
+        margin-left: #{$i}rem !important;
+    }
+}
+
+/*padding-top 1vh ~ 20vh*/
+/*pat1 - pat20*/
+@for $i from 0 through 20 {
+    .u-pat#{$i} {
+        padding-top: #{$i}vh !important;
+    }
+}
+
+/*padding-bottom 1vh ~ 20vh*/
+/*pab1 - pab20*/
+@for $i from 0 through 20 {
+    .u-pab#{$i} {
+        padding-bottom: #{$i}vh !important;
+    }
+}
+
+/*padding-right 1rem ~ 10rem*/
+/*par1 - par10*/
+@for $i from 0 through 10 {
+    .u-par#{$i} {
+        padding-right: #{$i}rem !important;
+    }
+}
+
+/*padding-left 1rem ~ 10rem*/
+/*pal1 - pal10*/
+@for $i from 0 through 10 {
+    .u-pal#{$i} {
+        padding-left: #{$i}rem !important;
+    }
+}
+
+/*--------------------------------
+display none
+--------------------------------*/
+.u-pc-none {
+    @include mq-min(md) {
+        display: none !important;
+    }
+
+    @include mq-max(md) {
+        display: block !important;
+    }
+}
+
+.u-sp-none {
+    @include mq-min(md) {
+        display: block !important;
+    }
+
+    @include mq-max(md) {
+        display: none !important;
+    }
+}
+
+.u-pc-none--small {
+    @include mq-min(sm) {
+        display: none !important;
+    }
+
+    @include mq-max(sm) {
+        display: block !important;
+    }
+}
+
+.u-sp-none--small {
+    @include mq-min(sm) {
+        display: block !important;
+    }
+
+    @include mq-max(sm) {
+        display: none !important;
+    }
+}
+
+/*--------------------------------
+styles
+--------------------------------*/
+
+.u-tac {
+    text-align: center;
+}
+
+.u-underline {
+    text-decoration: underline;
+}

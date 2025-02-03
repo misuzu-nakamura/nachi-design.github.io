@@ -1,0 +1,286 @@
+/////↓　スクロールアニメーション　↓/////
+
+.fadeUpTrigger,
+.fadeDownTrigger,
+.fadeInTrigger {
+    opacity: 0;
+}
+
+/* fadeUp */
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &.delay1 {
+        animation-delay: 0.2s;
+    }
+
+    &.delay2 {
+        animation-delay: 0.4s;
+    }
+
+    &.delay3 {
+        animation-delay: 0.6s;
+    }
+
+    &.delay4 {
+        animation-delay: 0.8s;
+    }
+
+    &.delay5 {
+        animation-delay: 1.0s;
+    }
+
+    &.fast1 {
+        animation-duration: 0.7s;
+    }
+
+    @media screen and (min-width: 769px) {
+        &.delay1-pc {
+            animation-delay: 0.2s;
+        }
+
+        &.delay2-pc {
+            animation-delay: 0.4s;
+        }
+
+        &.delay3-pc {
+            animation-delay: 0.6s;
+        }
+
+        &.delay4-pc {
+            animation-delay: 0.8s;
+        }
+
+        &.delay5-pc {
+            animation-delay: 1.0s;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &.delay1-sp {
+            animation-delay: 0.2s;
+        }
+
+        &.delay2-sp {
+            animation-delay: 0.4s;
+        }
+
+        &.delay3-sp {
+            animation-delay: 0.6s;
+        }
+
+        &.delay4-sp {
+            animation-delay: 0.8s;
+        }
+
+        &.delay5-sp {
+            animation-delay: 1.0s;
+        }
+    }
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* fadeDown */
+.fadeDown {
+    animation-name: fadeDownAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &.delay1 {
+        animation-delay: 0.2s;
+    }
+
+    &.delay2 {
+        animation-delay: 0.4s;
+    }
+
+    &.delay3 {
+        animation-delay: 0.6s;
+    }
+
+    &.delay4 {
+        animation-delay: 0.8s;
+    }
+
+    &.delay5 {
+        animation-delay: 1.0s;
+    }
+
+    @media screen and (min-width: 769px) {
+        &.delay1-pc {
+            animation-delay: 0.2s;
+        }
+
+        &.delay2-pc {
+            animation-delay: 0.4s;
+        }
+
+        &.delay3-pc {
+            animation-delay: 0.6s;
+        }
+
+        &.delay4-pc {
+            animation-delay: 0.8s;
+        }
+
+        &.delay5-pc {
+            animation-delay: 1.0s;
+        }
+    }
+}
+
+@keyframes fadeDownAnime {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* fadeIn */
+.fadeIn {
+    animation-name: fadeInAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &.delay1 {
+        animation-delay: 0.2s;
+    }
+
+    &.delay2 {
+        animation-delay: 0.4s;
+    }
+
+    &.delay3 {
+        animation-delay: 0.6s;
+    }
+
+    &.delay4 {
+        animation-delay: 0.8s;
+    }
+
+    &.delay5 {
+        animation-delay: 1.0s;
+    }
+
+    @media screen and (min-width: 769px) {
+        &.delay1-pc {
+            animation-delay: 0.2s;
+        }
+
+        &.delay2-pc {
+            animation-delay: 0.4s;
+        }
+
+        &.delay3-pc {
+            animation-delay: 0.6s;
+        }
+
+        &.delay4-pc {
+            animation-delay: 0.8s;
+        }
+
+        &.delay5-pc {
+            animation-delay: 1.0s;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &.delay1-sp {
+            animation-delay: 0.2s;
+        }
+
+        &.delay2-sp {
+            animation-delay: 0.4s;
+        }
+
+        &.delay3-sp {
+            animation-delay: 0.6s;
+        }
+
+        &.delay4-sp {
+            animation-delay: 0.8s;
+        }
+
+        &.delay5-sp {
+            animation-delay: 1.0s;
+        }
+    }
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.wipeAnimeTrigger {
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+        background: #3b3b3b;
+        content: '';
+        inset: 0;
+        pointer-events: none;
+        position: absolute;
+        z-index: 1;
+        transform: translateX(0%);
+    }
+
+    &.wipe-white {
+        &::before {
+            background: $white;
+        }
+    }
+}
+
+.wipeAnime {
+    &::before {
+        animation: wipeAnime 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+
+    @keyframes wipeAnime {
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+    &.delay {
+        &::before {
+            animation-delay: 0.3s;
+        }
+    }
+
+    &.fast {
+        &::before {
+            animation-duration: .7s;
+        }
+    }
+}
+
+/////↑　スクロールアニメーション　↑/////

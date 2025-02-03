@@ -1,0 +1,420 @@
+/*----------------
+
+works.scss
+
+----------------*/
+.p-works {
+    &__sec-ttl {
+        text-align: center;
+        border-top: solid 1px $light-beige;
+        border-bottom: solid 1px $light-beige;
+        padding: 50px 0;
+
+        p, h3 {
+            color: $white;
+        }
+
+        @include mq-max(sm) {
+            padding: 30px 0;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+
+        @media screen and (min-width: 1500px) {
+            grid-template-columns: 400px 1fr;
+        }
+
+        @include mq-max(md) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__nav {
+        padding: 3rem 4vw 3rem;
+        position: sticky;
+        top: 100px;
+        height: max-content;
+
+        &__link {
+            color: $dark-brown;
+            display: inline-block;
+            margin-bottom: 1rem;
+            transition: all .3s;
+
+            &::before {
+                content: '';
+                background-color: $brown;
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                display: inline-block;
+                vertical-align: baseline;
+                margin-right: 5px;
+                transition: all .3s;
+            }
+
+            &.is-active {
+                color: $white;
+
+                &::before {
+                    background-color: $light-beige;
+                }
+            }
+        }
+
+        @include mq-max(md)  {
+            position: relative;
+            top: auto;
+
+            &__list {
+                display: flex;
+                gap: 0 3rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            &__link {
+                &.is-active {
+                    color: $dark-brown;
+
+                    &::before {
+                        background-color: $brown;
+                    }
+                }
+            }
+        }
+    }
+
+    &__main {
+        border-left: solid 1px $light-beige;
+        padding: 3rem 4vw;
+
+        @include mq-max(md) {
+            border-left: none;
+        }
+    }
+
+    .c-tab-btn {
+        margin-bottom: 50px;
+    }
+    
+    &__container {
+        margin-bottom: 70px;
+
+        &__ttl {
+            margin-bottom: 3rem;
+            position: relative;
+
+            &__en {
+                font-size: min(8vw, 160px);
+                color: $light-beige;
+                line-height: 1.2;
+                opacity: 0.15;
+            }
+
+            &__jp {
+                font-size: 2rem;
+                color: $white;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+            }
+
+            @include mq-max(xl) {
+                &__en {
+                    font-size: min(8vw, 90px);
+                }
+            }
+
+            @include mq-max(sm) {
+                text-align: center;
+                margin-bottom: 5rem;
+
+                &__en {
+                    font-size: 10.5vw;
+                }
+
+                &__jp {
+                    width: 100%;
+                    font-size: 2.2rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        &__desc {
+            @include grid();
+            align-items: center;
+            margin-bottom: 5rem;
+
+            &__text {
+                p {
+                    color: $white;
+                }
+            }
+
+            &__skill {
+                border: solid 1px $white;
+                display: inline-block;
+                padding: 1rem 1.5rem;
+
+                &__head {
+                    color: $brown;
+                }
+            }
+
+            @include mq-max(sm) {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        &__list {
+            @include grid(1fr 1fr, 70px);
+
+            &--top {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 15px;
+            }
+
+            @include mq-max(md) {
+                gap: 50px 20px;
+            }
+
+            @include mq-max(sm) {
+                grid-template-columns: 1fr;
+
+                &--top {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+
+        &__item {
+            &__link {
+                display: block;
+            }
+
+            &__ttl {
+                color: $white;
+                font-size: 1.6rem;
+                margin: 0.5em 0 1em;
+            }
+
+            &__tag-list {
+                display: flex;
+                gap: 1rem;
+            }
+
+            &__tag-item {
+                font-size: 1.2rem;
+                color: $white;
+                border: solid 1px $white;
+                border-radius: 50px;
+                padding: 0.3rem 1rem;
+            }
+        }
+
+        &__btn {
+            text-align: right;
+            margin: 30px 0;
+
+            @include mq-max(sm) {
+                text-align: center;
+            }
+        }
+    }
+
+    /*-- モーダル --*/
+    &__modal-open {
+        cursor: pointer;
+    }
+
+    &__modal-contents {
+        position: relative;
+
+        &__ttl {
+            font-size: 2.2rem;
+        }
+
+        &__tanto {
+            font-size: 1.2rem;
+        }
+
+        &__desc {
+            background-color: $light-gray;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        &__img {
+            margin-bottom: 2rem;
+        }
+
+        &__img-head {
+            margin-bottom: 0.5rem;
+
+            &::before {
+                content: '●';
+                color: $dark-beige;
+                font-size: 1rem;
+                margin-right: 3px;
+            }
+        }
+
+        &__related {
+            &__head {
+                font-size: 2.4rem;
+            }
+            
+            &__link {
+                @include grid(2fr 3fr);
+                align-items: center;
+
+                p {
+                    color: $dark-brown;
+                }
+
+                &:hover {
+                    opacity: .6;
+                    transition: opacity .5s;
+                }
+            }
+
+            &__link-tanto {
+                font-size: 1.2rem;
+            }
+
+            &__link-btn {
+                font-size: 12px;
+                display: inline-block;
+                border: solid 1px $dark-brown;
+                border-radius: 50px;
+                padding: 5px 25px;
+                margin-top: 1em;
+            }
+        }
+
+        @include mq-max(sm) {
+            &__ttl {
+                font-size: 2rem;
+            }
+
+            &__related {
+                &__link {
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+                }
+
+                &__link-btn {
+                    display: block;
+                    text-align: center;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    &__modal-close {
+        font-size: 1.8rem;
+        color: $dark-brown;
+        position: absolute;
+        right: -1em;
+        bottom: -2em;
+
+        @include mq-max(sm) {
+            bottom: -3em;
+        }
+    }
+}
+
+
+//トップページにのみ適用
+.p-top-page {
+    .p-works {
+        .p-works__container__list {
+            gap: 30px;
+        }
+    }
+}
+
+//事例詳細
+.p-works-detail {
+    padding: 150px 0 100px;
+
+    &__main {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 5rem;
+        margin-bottom: 10vh;
+    }
+
+    &__text {
+        h1,h2,h3,p {
+            color: $white;
+        }
+    }
+
+    &__site-name {
+        font-size: 2.6rem;
+    }
+
+    &__small-text {
+        font-size: 1.2rem;
+    }
+
+    &__visit-btn {
+        color: $white;
+        font-size: 1.4rem;
+        border-color: $white;
+        margin: 2rem 0;
+
+        i {
+            margin-left: 5px;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__img {
+        margin-bottom: 5rem;
+        &--col2 {
+            @include grid();
+        }
+    }
+
+    &__more-info {
+        h2,p,a {
+            color: $white;
+        }
+    }
+
+    @include mq-max(md) {
+        &__main {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @include mq-max(sm) {
+        &__site-name {
+            font-size: 2.2rem;
+        }
+
+        &__main {
+            margin-bottom: 5rem;
+        }
+
+        &__img {
+            margin-bottom: 2rem;
+            &--col2 {
+                gap: 5px;
+            }
+        }
+
+        &__more-info {
+            margin-top: 5rem;
+        }
+    }
+}

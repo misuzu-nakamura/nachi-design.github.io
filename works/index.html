@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>制作実績｜webデザイナーnachiのポートフォリオ</title>
+  <link rel="shortcut icon" href="../favicon.ico">
+  <!-- css -->
+  <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="../css/app.css">
+  <!-- web font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,700&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/629310e357.js" crossorigin="anonymous"></script>
+  <!-- luminous -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css">
+
+  <!-- micro modal -->
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+</head>
+
+<body>
+  <!-- ローディングオーバーレイ -->
+  <div class="l-loading-overlay"></div>
+  <header>
+    <div class="l-header">
+      <a href="../" class="l-header__logo">
+        <h1><img src="../images/logo_white.svg" alt=""></h1>
+      </a>
+      <!-- ハンバーガーボタン -->
+      <div class="l-header__hb-btn">
+        <span></span>
+        <span></span>
+      </div>
+      <!-- ハンバーガー内 -->
+      <div class="l-header__hb-container">
+        <div class="l-header__hb-container__img">
+          <picture>
+            <source srcset="../images/img-navi_sp.webp" media="(max-width: 768px)">
+            <img src="../images/img-navi.webp" alt="">
+          </picture>
+        </div>
+        <nav class="l-header__nav">
+          <ul>
+            <li class="l-header__nav__item fadeDownTrigger">
+              <a href="./" class="l-header__nav__link"><span
+                  class="font-eb-gar l-header__nav__link__en">WORKS</span><span
+                  class="l-header__nav__link__jp">制作実績</span></a>
+              <a href="./index.html?tab=web" class="l-header__nav__child font-eb-gar">Web design</a>
+              <a href="./index.html?tab=graph" class="l-header__nav__child font-eb-gar">Graphic design</a>
+              <a href="./index.html?tab=illust" class="l-header__nav__child font-eb-gar">Illustration</a>
+            </li>
+            <li class="l-header__nav__item fadeDownTrigger delay1">
+              <a href="../#profile" class="l-header__nav__link"><span
+                  class="font-eb-gar l-header__nav__link__en">PROFILE</span><span
+                  class="l-header__nav__link__jp">プロフィール</span></a>
+            </li>
+            <li class="l-header__nav__item fadeDownTrigger delay2">
+              <a href="https://forms.gle/RBAFZd1sPAwpuSv8A" target="_blank" class="l-header__nav__link"><span
+                  class="font-eb-gar l-header__nav__link__en">CONTACT</span><span
+                  class="l-header__nav__link__jp">お問い合わせ</span></a>
+            </li>
+            <li class="fadeDownTrigger delay3">
+              <a href="https://www.instagram.com/nachichi_illustration?igsh=MXNkaDZ2djcwa2NzMg%3D%3D&utm_source=qr"
+                target="_blank" class="l-header__nav__btn"><i class="fa-brands fa-instagram"></i><span
+                  class="font-eb-gar">INSTAGRAM</span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="l-header__copyright font-eb-gar-italic u-sp-none--small">&copy;Nachi design 2025 All Rights Reserved.</p>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <div class="l-other-page p-works">
+      <div class="l-other-page__ttl">
+        <p class="l-other-page__ttl__en font-eb-gar">WORKS</p>
+        <h1 class="l-other-page__ttl__jp">制作実績</h1>
+      </div>
+
+      <div class="l-container">
+        <ul class="c-tab-btn">
+          <li class="c-tab-btn__item is-active fadeDownTrigger">
+            <p>Webデザイン</p>
+          </li>
+          <li class="c-tab-btn__item fadeDownTrigger delay1">
+            <p>グラフィックデザイン</p>
+          </li>
+          <li class="c-tab-btn__item fadeDownTrigger delay2">
+            <p>イラスト</p>
+          </li>
+        </ul>
+        <!-- Webデザイン -->
+        <div class="p-works__container c-tab-contents" id="works-web">
+          <ul class="p-works__container__list">
+            <li class="p-works__container__item">
+              <a href="hd-design/index.html" class="p-works__container__item__link">
+                <figure class="c-hov-img">
+                  <img src="../images/works/hd-design/img-mockup.webp" alt="">
+                </figure>
+                <h4 class="p-works__container__item__ttl">株式会社S様 / 注文住宅事業LP</h4>
+                <ul class="p-works__container__item__tag-list">
+                  <li class="p-works__container__item__tag-item">デザイン</li>
+                  <li class="p-works__container__item__tag-item">コーディング</li>
+                </ul>
+              </a>
+            </li>
+            <li class="p-works__container__item">
+              <img src="https://placehold.jp/1120x720.png" alt="">
+              <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+              <ul class="p-works__container__item__tag-list">
+                <li class="p-works__container__item__tag-item">デザイン</li>
+                <li class="p-works__container__item__tag-item">コーディング</li>
+              </ul>
+            </li>
+            <li class="p-works__container__item">
+              <img src="https://placehold.jp/1120x720.png" alt="">
+              <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+              <ul class="p-works__container__item__tag-list">
+                <li class="p-works__container__item__tag-item">デザイン</li>
+                <li class="p-works__container__item__tag-item">コーディング</li>
+              </ul>
+            </li>
+            <li class="p-works__container__item">
+              <img src="https://placehold.jp/1120x720.png" alt="">
+              <h4 class="p-works__container__item__ttl">株式会社G様 / コーポレートサイト</h4>
+              <ul class="p-works__container__item__tag-list">
+                <li class="p-works__container__item__tag-item">デザイン</li>
+                <li class="p-works__container__item__tag-item">コーディング</li>
+              </ul>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- グラフィック -->
+        <div class="p-works__container c-tab-contents" id="works-graphic" style="display: none;">
+          <ul class="p-works__container__list">
+            <li class="p-works__container__item">
+              <!-- ボタン -->
+              <a data-micromodal-trigger="modal-gr-1" class="p-works__modal-open">
+                <figure class="c-hov-img">
+                  <img src="https://placehold.jp/800x600.png" alt="">
+                </figure>
+                <p>株式会社S様 / 事業パンフレット</p>
+                <p>Design, Copy writing</p>
+              </a>
+              <!-- 内容 -->
+              <div class="modal micromodal-slide" id="modal-gr-1" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                  <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="ここにタイトル">
+                    <div class="p-works__modal-contents">
+                      <h2 class="p-works__modal-contents__ttl">株式会社S様 / 事業パンフレット</h2>
+                      <p class="p-works__modal-contents__tanto">Design, Copy writing</p>
+                      <div class="p-works__modal-contents__desc">
+                        <p>コーポレートカラーの赤をベースにデザイン。競合他社は写真をメインとしているデザインが多かったため、イラストで差別化し、柔らかく優しいイメージに。</p>
+                      </div>
+                      <div class="p-works__modal-contents__img">
+                        <p class="p-works__modal-contents__img-head">表紙・中面</p>
+                        <figure>
+                          <img src="https://placehold.jp/800x600.png" alt="">
+                        </figure>
+                      </div>
+
+                      <div class="p-works__modal-contents__related">
+                        <p class="p-works__modal-contents__related__head font-eb-gar">Related works</p>
+                        <a href="#" class="p-works__modal-contents__related__link">
+                          <figure class="p-works__modal-contents__related__img">
+                            <img src="https://placehold.jp/800x600.png" alt="">
+                          </figure>
+                          <div class="p-works__modal-contents__related__text">
+                            <p class="p-works__modal-contents__related__link-ttl">株式会社S様 / 事業ブランドLP</p>
+                            <p class="p-works__modal-contents__related__link-tanto">Design, Cording</p>
+                            <p class="p-works__modal-contents__related__link-btn">詳しく見る</p>
+                          </div>
+                        </a>
+                      </div>
+                      <a href="" class="p-works__modal-close font-eb-gar" data-micromodal-close aria-label="閉じる"><i
+                          class="fa-solid fa-xmark"></i>CLOSE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <!-- イラスト -->
+        <div class="p-works__container c-tab-contents" id="works-illust" style="display: none;">
+          <ul class="p-works__container__list">
+            <li class="p-works__container__item">
+              <a href="https://placehold.jp/800x600.png" class="luminous">
+                <img src="https://placehold.jp/800x600.png" alt="">
+              </a>
+            </li>
+            <li class="p-works__container__item">
+              <a href="https://placehold.jp/900x600.png" class="luminous">
+                <img src="https://placehold.jp/900x600.png" alt="">
+              </a>
+            </li>
+            <li class="p-works__container__item">
+              <a href="https://placehold.jp/300x200.png" class="luminous">
+                <img src="https://placehold.jp/300x200.png" alt="">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 共通 -->
+    <section class="l-contact">
+      <div class="l-contact__wrapper">
+        <a href="https://www.instagram.com/nachichi_illustration?igsh=MXNkaDZ2djcwa2NzMg%3D%3D&utm_source=qr"
+          target="_blank" class="l-contact__box">
+          <p class="l-contact__box__en-ttl l-contact__box__en-ttl--insta font-eb-gar"><i
+              class="fa-brands fa-instagram"></i>INSTAGRAM</p>
+          <h3>インスタグラム</h3>
+          <p class="l-contact__box__desc">イラストを掲載しています。ぜひご覧ください</p>
+        </a>
+        <a href="https://forms.gle/RBAFZd1sPAwpuSv8A" target="_blank" class="l-contact__box">
+          <p class="l-contact__box__en-ttl font-eb-gar">CONTACT</p>
+          <h3>お問い合わせ</h3>
+          <p class="l-contact__box__desc">土日祝を除く2営業日以内に返信します</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="l-footer">
+      <p class="l-footer__logo"><img src="../images/logo_brown.svg" alt=""></p>
+      <p class="l-footer__copyright font-eb-gar-italic">&copy;Nachi design 2025 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /*
+    * タブ切り替え
+    */
+    // DOM読み込み後に実行
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabBtn = document.querySelectorAll('.c-tab-btn__item');
+      const tabContents = document.querySelectorAll('.c-tab-contents');
+
+      // タブの表示切り替え
+      const activateTab = (index) => {
+        tabBtn.forEach(btn => btn.classList.remove('is-active'));
+        tabContents.forEach(content => content.style.display = 'none');
+
+        tabBtn[index].classList.add('is-active');
+        tabContents[index].style.display = 'block';
+      };
+
+      // URLのクエリパラメータを取得
+      const params = new URLSearchParams(window.location.search);
+      const tabParam = params.get('tab');
+
+      const tabMap = {
+        web: 0,
+        graph: 1,
+        illust: 2
+      };
+
+      if (tabParam && tabMap.hasOwnProperty(tabParam)) {
+        activateTab(tabMap[tabParam]);
+      } else {
+        activateTab(0); // デフォルトのタブを表示
+      }
+
+      // タブボタンのクリックイベント
+      tabBtn.forEach((btn, index) => {
+        btn.addEventListener('click', () => {
+          activateTab(index);
+          const tabKeys = Object.keys(tabMap);
+          const tabName = tabKeys[index] || 'web';
+          const newUrl = `${window.location.pathname}?tab=${tabName}`;
+          history.replaceState(null, '', newUrl); // URLを更新
+        });
+      });
+    });
+
+  </script>
+
+  <!-- luminous -->
+  <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
+  <script>
+    new LuminousGallery(document.querySelectorAll(".luminous"));
+  </script>
+
+  <!-- micro modal -->
+  <script>
+    MicroModal.init({
+      disableFocus: true,
+
+      onShow: (modal) => {
+        // モーダル内のスクロール位置を最上部に設定
+        const content = modal.querySelector('.modal__content');
+        if (content) {
+          content.scrollTop = 0; // スクロール位置をリセット
+        }
+        // モーダルが表示されたときに.l-headerのz-indexを0に変更
+        const header = document.querySelector('.l-header');
+        if (header) {
+          // 元のz-indexを保存
+          originalZIndex = window.getComputedStyle(header).zIndex;
+          header.style.zIndex = '0';
+        }
+      },
+      onClose: (modal) => {
+        // モーダルが閉じられたときに.l-headerのz-indexを元に戻す
+        const header = document.querySelector('.l-header');
+        if (header && originalZIndex !== undefined) {
+          // 元のz-indexに戻す
+          header.style.zIndex = originalZIndex;
+        }
+      }
+    });
+  </script>
+
+  <!-- common.js -->
+  <script src="../js/common.js"></script>
+</body>
+
+</html>

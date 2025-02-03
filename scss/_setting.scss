@@ -1,0 +1,185 @@
+/*----------------
+
+setting.scss
+
+----------------*/
+/*--------------------------------
+color
+--------------------------------*/
+
+$white: #fff;
+$brown: #D2C3B7;
+$dark-brown: #605043;
+$light-beige: #F9F5EE;
+$dark-beige: #ECE3DB;
+$light-gray: #F1EDE9;
+
+/*--------------------------------
+media query
+--------------------------------*/
+
+$breakpoint-min: (
+    'xs': '415px',
+    'sm': '577px',
+    'md': '769px',
+    'lg': '993px',
+    'xl': '1201px',
+    ) !default;
+
+$breakpoint-max: (
+    'xs': '414px',
+    'sm': '576px',
+    'md': '768px',
+    'lg': '992px',
+    'xl': '1200px',
+    ) !default;
+
+@mixin mq-min($breakpoint: md) {
+    @media screen and (min-width: #{map-get($breakpoint-min, $breakpoint)}) {
+        @content;
+    }
+}
+
+@mixin mq-max($breakpoint: md) {
+    @media screen and (max-width: #{map-get($breakpoint-max, $breakpoint)}) {
+        @content;
+    }
+}
+
+//使用例
+//()内にxs〜xlを設定、初期値はmd
+
+// @include mq-min() {
+// }
+
+// @include mq-max() {
+// }
+
+@mixin flex($wrap: nowrap, $jc: center, $ai: center) {
+    display: flex;
+    flex-wrap: $wrap;
+    justify-content: $jc;
+    align-items: $ai;
+}
+//使用例
+//@include flex(wrap,space-between,center);
+
+@mixin flex-center() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin grid($columns: 1fr 1fr, $gap: 30px) {
+    display: grid;
+    grid-template-columns: $columns;
+    gap: $gap;
+}
+//使用例
+//@include grid(1fr 1fr 1fr,30px);
+
+
+@mixin pa-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//使用例
+//@include pa-center;
+
+@mixin pa-left {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+//使用例
+//@include pa-left;
+
+
+
+:root {
+    font-family: "Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","ヒラギノ角ゴシック","Hiragino Sans","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    font-weight: 500;
+    font-size: 62.5%;
+    color: $dark-brown;
+    letter-spacing: 0.05rem;
+    line-height: 1.8;
+
+    @media screen and (min-width: 1500px) {
+        font-size: 71.875%;
+    }
+
+    @include mq-max(sm) {
+        font-size: 58.0375%;
+    }
+
+    @media screen and (max-height: 650px) and (min-width: 993px) {
+        font-size: 58.0375%;
+    }
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+}
+
+body {
+    background: #B5A292;
+
+    &::after {
+        content: '';
+        background:  url(../images/bg-noise.webp) repeat;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li,figure,dd {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,small,strong,b,i,dl,dt,dd,ol,ul,li,table,caption,tbody,tfoot,thead,tr,th,td,article,nav,section {
+    // font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
+    font-size: 1.4rem;
+    font-weight: inherit;
+}
+
+/*--------------------------------
+luminous lightbox 上書き
+--------------------------------*/
+
+.lum-lightbox {
+    z-index: 10000;
+}
+
+.lum-previous-button::after,
+.lum-next-button::after {
+    box-shadow: none !important;
+}
+
+@include mq-max(sm) {
+    .lum-lightbox-inner img {
+        max-height: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .lum-gallery-button::after {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
