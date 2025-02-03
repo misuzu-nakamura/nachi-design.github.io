@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*環境再生事業ページ style.css*/
+
+/*----------------------------------------
+  メリット
+----------------------------------------*/
+.p-merit__list li {
+  margin-bottom: 0.8em;
+}
+
+/*----------------------------------------
+  他の固化材との比較
+----------------------------------------*/
+.l-compareCont table tbody th {
+  background: #fff;
+}
+.l-compareCont table .acc-green th,
+.l-compareCont table .acc-green td{
+  background: #eef7f6;
+}
+
+@media print, screen and (min-width: 769px){
+  .l-compareCont table .th07 {
+    width: 160px;
+  }
+}
+
+/*----------------------------------------
+  資料
+----------------------------------------*/
+.l-shiryoCont dl:last-child {
+  margin-bottom: 0;
+}
+@media print, screen and (min-width: 769px){
+  .l-shiryoCont dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+  }
+  .l-shiryoCont dl dt {
+    width: 25%;
+  }
+  .l-shiryoCont dl dd {
+    width: 75%;
+    border-left: solid 1px #d5d5d5;
+    padding-left: 1em;
+  }
+}
+@media screen and (max-width:768px){
+  .l-shiryoCont dl {
+  margin-bottom: 1em;
+}
+}
+
+/*
+@media print, screen and (min-width: 769px){}
+
+@media screen and (max-width:768px){}
+*/

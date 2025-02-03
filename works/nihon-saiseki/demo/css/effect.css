@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------
+  ページをふわっと表示
+----------------------------------------*/
+.start{
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 90000;
+}
+
+/*----------------------------------------
+  スクロールきっかけで表示
+----------------------------------------*/
+/*下からフェードイン*/
+.effect-fade {
+  opacity : 0;
+  transform: translate(0, 55px);
+  transition: all 1000ms;
+}
+/*上からフェードインに変更*/
+.effect-fade.tb {
+  transform: translate(0, -10px);
+}
+
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/*時間差*/
+.fade-delay {
+    transition: all 900ms;
+  }
+/* 2つ目の要素に200msのdelayをかける */
+ul .effect-fade:nth-of-type(2),
+.effect-fade.delay02 {
+  -moz-transition-delay:200ms;
+  -webkit-transition-delay:200ms;
+  -o-transition-delay:200ms;
+  -ms-transition-delay:200ms;
+  }
+
+/* 3つ目の要素に300msのdelayをかける */
+ul .effect-fade:nth-of-type(3),
+.effect-fade.delay03 {
+  -moz-transition-delay:300ms;
+  -webkit-transition-delay:300ms;
+  -o-transition-delay:300ms;
+  -ms-transition-delay:300ms;
+  }
+
+/* 4つ目の要素に400msのdelayをかける */
+ul .effect-fade:nth-of-type(4),
+.effect-fade.delay04 {
+  -moz-transition-delay:400ms;
+  -webkit-transition-delay:400ms;
+  -o-transition-delay:400ms;
+  -ms-transition-delay:400ms;
+  }
+
+  @media print, screen and (min-width: 769px){
+    /* (PCのみ)2つ目の要素に200msのdelayをかける */
+  ul .effect-fade:nth-of-type(2),
+  .effect-fade.delay02-pc {
+    -moz-transition-delay:200ms;
+    -webkit-transition-delay:200ms;
+    -o-transition-delay:200ms;
+    -ms-transition-delay:200ms;
+    }
+  
+  /*  (PCのみ)3つ目の要素に300msのdelayをかける */
+  ul .effect-fade:nth-of-type(3),
+  .effect-fade.delay03-pc {
+    -moz-transition-delay:300ms;
+    -webkit-transition-delay:300ms;
+    -o-transition-delay:300ms;
+    -ms-transition-delay:300ms;
+    }
+  
+  /*  (PCのみ)4つ目の要素に400msのdelayをかける */
+  ul .effect-fade:nth-of-type(4),
+  .effect-fade.delay04-pc {
+    -moz-transition-delay:400ms;
+    -webkit-transition-delay:400ms;
+    -o-transition-delay:400ms;
+    -ms-transition-delay:400ms;
+    }
+  }
+  
+  @media screen and (max-width:768px){
+     /* (SPのみ)2つ目の要素に200msのdelayをかける */
+  ul .effect-fade:nth-of-type(2),
+  .effect-fade.delay02-sp {
+    -moz-transition-delay:200ms;
+    -webkit-transition-delay:200ms;
+    -o-transition-delay:200ms;
+    -ms-transition-delay:200ms;
+    }
+  
+  /*  (SPのみ)3つ目の要素に300msのdelayをかける */
+  ul .effect-fade:nth-of-type(3),
+  .effect-fade.delay03-sp {
+    -moz-transition-delay:300ms;
+    -webkit-transition-delay:300ms;
+    -o-transition-delay:300ms;
+    -ms-transition-delay:300ms;
+    }
+  
+  /*  (SPのみ)4つ目の要素に400msのdelayをかける */
+  ul .effect-fade:nth-of-type(4),
+  .effect-fade.delay04-sp {
+    -moz-transition-delay:400ms;
+    -webkit-transition-delay:400ms;
+    -o-transition-delay:400ms;
+    -ms-transition-delay:400ms;
+    }
+  }
+
+/*左から右にフェードイン*/
+.effect-fade-lr {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 1000ms;
+}
+.effect-fade-lr.effect-scroll{
+  opacity: 1;
+  transform: translateX(0);
+}
+/*要素を拡大*/
+.effect-scale {
+    animation-name: scale-in;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    transform: scale(0.5,0.5);
+  }
+  @keyframes scale-in {
+    100% {
+      transform: scale(1,1);
+    }
+  }
+
+/* @media print, screen and (min-width: 769px){}
+
+@media screen and (max-width:768px){} */

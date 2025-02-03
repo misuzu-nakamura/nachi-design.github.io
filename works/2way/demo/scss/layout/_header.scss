@@ -1,0 +1,31 @@
+/*header*/
+
+.l-header {
+background: $color-yellow;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+
+    &__logo {
+        width: 150px;
+        display: flex;
+        align-items: center;
+
+        @include sp {
+            max-width: 30%;
+        }
+    }
+
+    &__contact {
+        &__btn {
+            display: inline-block;
+
+            @include pc {
+                max-width: 230px;
+            }
+        }
+    }
+}

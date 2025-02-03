@@ -1,0 +1,544 @@
+// -----------------------------------------------------------------
+// Component
+// -----------------------------------------------------------------
+
+#page-top {
+    display: block;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+
+    a {
+        display: flex;
+        padding: 15px 15px;
+        height: 100%;
+        align-items: center;
+        font-size: 28px;
+        justify-content: center;
+        color: #fff;
+        background: $subColor;
+        border-radius: 999px;
+        width: 60px;
+        height: 60px;
+        transition: all 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}
+
+.c-title {
+    line-height: 1.5;
+
+    span {
+        display: block;
+        font-size: 0.6em;
+    }
+
+    &--headTitle {
+        color: #fff;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: 500;
+        @include sp {
+            font-size: 4vw;
+            width: fit-content;
+        }
+    }
+
+    &--secTitle {
+        font-size: 35px;
+        text-align: center;
+        position: relative;
+        font-weight: bold;
+        padding-bottom: 30px;
+
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    &--style01 {
+        &::after {
+            content: "";
+            background-image: url(../images/deco-title--black.svg);
+            background-repeat: no-repeat;
+            width: 75px;
+            height: 12px;
+            display: inline-block;
+        }
+    }
+
+    &--style02 {
+        &::after {
+            content: "";
+            background-image: url(../images/deco-title--green.svg);
+            background-repeat: no-repeat;
+            width: 75px;
+            height: 12px;
+            display: inline-block;
+        }
+    }
+
+    &--textTitle {
+        color: $subColor;
+        font-size: 1.4rem;
+        text-align: left;
+
+        @include sp {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--itemTitle {
+        color: $subColor;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.c-heading {
+    position: relative;
+    padding-left: 21px;
+    &::before {
+        background-color: $mainColor;
+        content: "";
+        display: block;
+        height: 72%;
+        width: 6px;
+        position: absolute;
+        left: 0;
+        top: 18%;
+        border-radius: 999px;
+    }
+
+    &--gray {
+        &::before {
+            background-color: #ccc;
+        }
+    }
+}
+
+.c-button {
+    a,
+    button,
+    input {
+        transition: all 0.3s;
+        background-color: #fff;
+        border: 1px solid $subColor;
+        // font-size: 1.2rem;
+        color: $subColor;
+        padding: 0.8em;
+        display: inline-block;
+        text-align: center;
+        border-radius: 50px;
+
+        @include pc {
+            min-width: 300px;
+            &:hover {
+                color: #fff;
+                background-color: $subColor;
+            }
+        }
+
+        @include sp {
+            width: 100%;
+        }
+    }
+
+    &--wide {
+        width: 100%;
+        a,
+        button,
+        input {
+            display: block;
+            min-width: inherit;
+            width: 100%;
+            @include sp {
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    &--small {
+        a,
+        button,
+        input {
+            font-size: 1rem;
+            padding: 0.5em;
+
+            @include pc {
+                min-width: 200px;
+            }
+        }
+    }
+
+    &--nega {
+        a,
+        button,
+        input {
+            background-color: $subColor;
+            color: #fff;
+            @include pc {
+                &:hover {
+                    color: $subColor;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    &--gray {
+        a,
+        button,
+        input {
+            border: 1px solid #888;
+            background-color: #888;
+            color: #fff;
+
+            @include pc {
+                &:hover {
+                    opacity: 0.8;
+                    background-color: #888;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------
+Component flexbox
+----------------------------------------*/
+
+.c-flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include sp {
+        flex-direction: column;
+
+        > .c-flexBox__spc {
+            &:nth-child(2) {
+                margin-top: 20px;
+            }
+
+            &:nth-child(1) {
+                margin-top: 0;
+            }
+        }
+    }
+
+    &__spc {
+        width: 100%;
+        &--img {
+            text-align: center;
+            @include pc {
+                img {
+                    width: 100%;
+                }
+            }
+
+            @include sp {
+                &:nth-child(2) {
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    &--ratio1-9 {
+        > .c-flexBox__spc {
+            @include pc {
+                &:nth-child(1) {
+                    width: 10%;
+                }
+
+                &:nth-child(2) {
+                    width: 88%;
+                }
+            }
+        }
+    }
+
+    &--ratio2-8 {
+        > .c-flexBox__spc {
+            @include pc {
+                &:nth-child(1) {
+                    width: 18%;
+                }
+
+                &:nth-child(2) {
+                    width: 78%;
+                }
+            }
+        }
+    }
+
+    &--ratio3-7 {
+        > .c-flexBox__spc {
+            @include pc {
+                &:nth-child(1) {
+                    width: 28%;
+                }
+
+                &:nth-child(2) {
+                    width: 68%;
+                }
+            }
+        }
+    }
+
+    &--ratio4-6 {
+        @include pc {
+            > .c-flexBox__spc {
+                &:nth-child(1) {
+                    width: 38%;
+                }
+
+                &:nth-child(2) {
+                    width: 58%;
+                }
+            }
+        }
+    }
+
+    &--ratio5-5 {
+        @include pc {
+            > .c-flexBox__spc {
+                &:nth-child(1) {
+                    width: 48%;
+                }
+
+                &:nth-child(2) {
+                    width: 48%;
+                }
+            }
+        }
+    }
+
+    &--alignCenter {
+        align-items: center;
+    }
+
+    &--rev {
+        @include pc {
+            flex-direction: row-reverse;
+        }
+
+        @include sp {
+            flex-direction: column-reverse;
+
+            > .c-flexBox__spc {
+                &:nth-child(1) {
+                    margin-top: 20px;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &--pc {
+            @include pc {
+                flex-direction: row-reverse;
+            }
+        }
+
+        &--sp {
+            @include sp {
+                flex-direction: column-reverse;
+
+                > .c-flexBox__spc {
+                    &:nth-child(1) {
+                        margin-top: 20px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.c-col {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        position: relative;
+
+        figure img {
+            width: 100%;
+        }
+
+        @include sp {
+            width: 100%;
+
+            &:nth-child(n + 1) {
+                margin-top: 20px;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+    }
+
+    &--sp {
+        @include sp {
+            &--item2 {
+                > .c-col__item {
+                    width: 49%;
+                    margin-left: 2%;
+
+                    &:nth-child(2n + 1) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(n + 3) {
+                        margin-top: 2%;
+                    }
+                }
+            }
+
+            &--item3 {
+                > .c-col__item {
+                    width: 32%;
+                    margin-left: 2%;
+
+                    &:nth-child(3n + 1) {
+                        margin-left: 0;
+                    }
+
+                    &:nth-child(n + 4) {
+                        margin-top: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    @include pc {
+        > .c-col__item {
+            + .c-col__item {
+                margin-left: 2%;
+            }
+        }
+
+        &--item2 {
+            > .c-col__item {
+                width: 49%;
+
+                &:nth-child(2n + 1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(n + 3) {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        &--item3 {
+            > .c-col__item {
+                width: 32%;
+
+                &:nth-child(3n + 1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(n + 4) {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        &--item4 {
+            > .c-col__item {
+                width: 23.5%;
+
+                &:nth-child(4n + 1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(n + 5) {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        &--item5 {
+            > .c-col__item {
+                width: 18.4%;
+
+                &:nth-child(5n + 1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(n + 6) {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        &--item6 {
+            > .c-col__item {
+                width: 15%;
+
+                &:nth-child(6n + 1) {
+                    margin-left: 0;
+                }
+
+                &:nth-child(n + 7) {
+                    margin-top: 2%;
+                }
+            }
+        }
+    }
+}
+
+.c-bgSymbol {
+    position: relative;
+
+    &::before {
+        content: "";
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        width: 440px;
+        height: 370px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 5%;
+        z-index: 0;
+
+        @include sp {
+            width: 145px;
+            height: 130px;
+        }
+    }
+
+    &--white {
+        &::before {
+            background-image: url(../images/symbol--white.svg);
+        }
+    }
+
+    &--green {
+        &::before {
+            background-image: url(../images/symbol--green.svg);
+        }
+    }
+
+    > * {
+        position: relative;
+        z-index: 2;
+    }
+}

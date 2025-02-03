@@ -1,0 +1,123 @@
+div.mfp_estimate_wrapper {
+	border: solid 1px #CCC;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 5px;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap {
+	position: relative;
+	padding: 10px;
+	border: solid 1px #CCC;
+	border-radius: 5px;
+	margin: 10px 0;
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: ease-in-out;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap div.mfp_estimate_label {
+	position: absolute;
+	top: -0.7em;
+	left: 1em;
+	display: inline-block;
+	background: #FFF;
+	font-size: 12px;
+	padding: 0 0.5em;
+	color: #666;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap select {
+	font-size: 18px;
+	margin: 5px 0;
+	padding: 5px 10px;
+	line-height: 1em;
+	min-height: 2.5em;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap img {
+	width: 100%;
+	max-width: 240px;
+	display: block;
+	margin: 0 auto;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap strong {
+	display: block;
+	text-align: right;
+	color: #900;
+	font-size: 24px;
+}
+div.mfp_estimate_wrapper div.mfp_estimate_wrap strong em {
+	display: inline-block;
+	font-size: 30px;
+}
+div.mfp_estimate_wrapper button.mfp_estimate_button {
+	margin: 10px 0 0 0;
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: solid 1px #CCC;
+	background: gradient(linear, center top, center bottom, from(#FEFEFE), to(#DEDEDE));
+	background: gradient(linear, center top, center bottom, from(#FEFEFE), to(#DEDEDE));
+	background: -moz-linear-gradient(top, #FEFEFE, #DEDEDE);
+	background: -ms-linear-gradient(top, #FEFEFE 0%, #DEDEDE 100%);
+	text-shadow: 0px 2px 0px #FFF;
+}
+div.mfp_estimate_list table.mfp_estimate_list_table {
+	width: 100%;
+	margin: 10px 0;
+}
+div.mfp_estimate_list table.mfp_estimate_list_table thead tr th {
+	text-align: center;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tr th,
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tr td,
+div.mfp_estimate_list table.mfp_estimate_list_table tr th,
+div.mfp_estimate_list table.mfp_estimate_list_table tr td {
+	border: none;
+	border-bottom: solid 1px #333;
+}
+
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tfoot tr th,
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tfoot tr td,
+div.mfp_estimate_list table.mfp_estimate_list_table tfoot tr th,
+div.mfp_estimate_list table.mfp_estimate_list_table tfoot tr td {
+	border: none;
+	text-align: right;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th,
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td,
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th,
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td {
+	padding: 0;
+	margin: 0;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th,
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th {
+	padding: 0 10px;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th span,
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr th span {
+	font-size: 10px;
+	display: block;
+	color: #666;
+}
+
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(1),
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(1) {
+	width: 80px;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(2),
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(2) {
+	text-align: right;
+	padding: 0 10px;
+	width: 120px;
+}
+div#wrapper div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(3),
+div.mfp_estimate_list table.mfp_estimate_list_table tbody tr td:nth-of-type(3) {
+	width: 60px;
+}
+div.mfp_estimate_list table.mfp_estimate_list_table tbody td img {
+	max-width: 80px;
+}
+div.mfp_estimate_list table.mfp_estimate_list_table tbody td button {
+	border: none;
+	background: none;
+	font-size: 24px;
+	cursor: pointer;
+}

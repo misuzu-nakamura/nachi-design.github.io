@@ -1,0 +1,15 @@
+/*footer*/
+
+.l-footer {
+
+    &__copyright {
+        text-align: center;
+        background: $color-black;
+        padding: 5px 0;
+
+        p {
+            color: #fff;
+            font-size: 0.8em;
+        }
+    }
+}

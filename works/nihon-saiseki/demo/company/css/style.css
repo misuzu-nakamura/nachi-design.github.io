@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*会社概要ページ style.css*/
+
+/*----------------------------------------
+  会社情報
+----------------------------------------*/
+.l-infoCont > ul > li {
+  display: flex;
+  flex-wrap: wrap;
+}
+.l-infoCont ul li .l-infoCont__list__title,
+.l-infoCont ul li .l-infoCont__list__desc {
+  border-bottom: solid 2px;
+  padding: 2rem 0 2rem 2rem;
+}
+.l-infoCont ul li .l-infoCont__list__title {
+  width: 20%;
+  border-color: #0cb59b;
+}
+.l-infoCont ul li .l-infoCont__list__title p{
+  font-weight: 500;
+  color: #0cb59b;
+}
+.l-infoCont ul li .l-infoCont__list__desc {
+  width: 80%;
+  border-color: #dcdcdc;
+}
+
+@media screen and (max-width:768px){
+  .l-infoCont ul li .l-infoCont__list__title,
+  .l-infoCont ul li .l-infoCont__list__desc {
+    padding: 1rem 0 1rem 0.8rem;
+  }
+  .l-infoCont ul li .l-infoCont__list__title {
+    width: 25%;
+  }
+  .l-infoCont ul li .l-infoCont__list__desc {
+    width: 75%;
+  }
+}
+
+/*----------------------------------------
+  代表メッセージ
+----------------------------------------*/
+.l-messageCont .l-messageCont__name {
+  text-align: right;
+  margin-top: 2rem;
+}
+
+@media print, screen and (min-width: 769px){
+  .l-messageCont p {
+  line-height: 2.5;  
+}
+}
+
+@media screen and (max-width:768px){
+
+}
+
+/*
+@media print, screen and (min-width: 769px){}
+
+@media screen and (max-width:768px){}
+*/

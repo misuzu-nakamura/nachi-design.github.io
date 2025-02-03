@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<head>
+<meta name=”robots” content=”noindex” />
+<meta charset="utf-8">
+<meta name="description" content="日本砕石株式会社のホームページです。" />
+<title>日本砕石株式会社</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/header.css">
+
+<!-- ↓webフォント -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@600&Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" rel="stylesheet">
+
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/common.js"></script>
+  
+<!-- ↓viewport -->
+<script>
+  var ua = navigator.userAgent;
+  if((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)){
+      $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
+  } else {
+      $('head').prepend('<meta name="viewport" content="width=1250">');
+  }
+</script>
+<link rel="stylesheet" href="css/style.css" />
+  <!-- ↓slick スライド -->
+<link rel="stylesheet" href="js/slick/slick.css" />
+<link rel="stylesheet" href="js/slick/slick-theme.css" />
+<script src="js/slick/slick.min.js"></script>
+
+<!-- ↓mvスライド-->
+<script>
+$(window).load(function(){
+  $('.slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      dots: false,
+      autoplay: true,
+      speed: 2000,
+      autoplaySpeed: 6000,
+      arrows: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+              //arrows: false,
+              centerMode: true,
+              centerPadding: '0px',
+              //slidesToShow: 1
+              }
+        }
+      ]
+  });
+});
+</script>
+
+</head>
+<body class="top-page bg-gray-left">
+  <?php include("./header.php"); ?>
+  
+<main class="mainContainer">
+  <div id="mv">
+    <div class="l-mvCont">
+      <div class="slider">
+        <div class="l-mvCont__img img01"></div>
+        <div class="l-mvCont__img img02"></div>
+      </div>
+      <div class="l-mvCont__copy effect-fade-lr">
+        <div class="l-mvCont__copy__wrap">
+          <p class="right mincho">美しい国</p>
+          <p class="left mincho">日本に輝きを</p>
+        </div>
+      </div>
+      <div class="l-scroll effect-fade-lr-auto">
+        <a href="#" class="eng">scroll</a>
+      </div>
+    </div>
+  </div><!--#mv-->
+
+  <section class="l-secCont" id="intro">
+    <div class="l-inner_sp">
+      <div class="l-introCont">
+        <div class="l-introCont__wrap">
+          <div class="l-introCont__wrap__text effect-fade-lr">
+            <h3>美しい国をつくるために<br>環境問題と向き合う企業でありたい</h3>
+            <p>“美しい国 日本に輝きを”のコンセプトのもと、<br class="pc">
+              令和2年11月に日本砕石株式会社を設立いたしました。<br class="pc">
+              砕石販売事業を主要事業としており、全国の採石場から、建材・石材等を全国各地へ<br class="pc">
+              スピーディで正確な供給を行ってまいります。<br>
+              日本砕石株式会社は、環境問題に対しても積極的に取り組んでまいります。<br class="pc">
+              国土の整備と環境再生の社業を通して、社会貢献企業としての地位を確立したいと思います。<br>
+              日本砕石株式会社の今後の事業の発展にご期待ください。</p>
+          </div>
+          <figure class="l-introCont__wrap__img">
+            <img src="images/img_intro.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section><!--#intro-->
+
+  <section class="l-secCont" id="business">
+    <div class="l-inner">
+      <div class="l-businessCont">
+        <div class="l-ttl effect-fade">
+          <h3 class="eng">business</h3>
+          <p>事業概要</p>
+        </div>
+        <div class="l-businessCont__box">
+          <ul>
+            <li class="l-businessCont__box__link bg-shadow effect-fade">
+              <a href="business01/">
+                <h4>砕石事業</h4>
+                <div class="p-detail">
+                  <p>埋立用の砕石、土砂等の販売、<br>
+                    生コン用砂利の販売等</p>
+                </div>
+                <div class="p-viewmore">
+                  <p>view more</p>
+                </div>
+              </a>
+            </li>
+            <li class="l-businessCont__box__link bg-shadow effect-fade">
+              <a href="business02/">
+                <h4>環境再生事業</h4>
+                <div class="p-detail">
+                  <p>汚染土壌改良事業<br>
+                    有機物分解再生事業</p>
+                </div>
+                <div class="p-viewmore">
+                  <p>view more</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!--#business-->
+
+  <section class="l-secCont effect-fade" id="ecology">
+    <div class="l-inner--eco">
+      <div class="l-ecologyCont">
+        <div class="l-ttl">
+          <h3 class="eng">ecology</h3>
+          <p>環境再生への取り組み</p>
+        </div>
+        <div class="l-ecologyCont__box">
+          <h4>電気や燃料不使用の「熱磁気分解装置」</h4>
+          <p>現在世界中の国が抱えているプラスチックごみや、海洋汚染源となっているマイクロプラスチック問題。<br class="pc">
+            国連でも対策会議を重ねていますが、いまだに解決策は微々たるものと言えます。 当社はこの問題を解決すべく、磁気力の高いネオジウムを使い、有機物をマイクロサイズに微分解します。</p>
+            <div class="textCenter">
+              <a href="ecology/" class="c-linkBtn01 white">熱磁気分解装置について</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section><!--#ecology-->
+
+  <section class="l-secCont" id="company">
+    <div class="l-inner_sp">
+      <a href="company/">
+        <div class="l-companyCont">
+          <div class="l-companyCont__inner">
+            <div class="l-companyCont__box">
+              <h3 class="eng">about company</h3>
+              <p>会社概要</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section><!--#company-->
+</main>
+
+<?php include("./footer.php"); ?>
+<!--ページをふわっと表示-->
+<div class="start"></div>
+<!-- InstanceEndEditable -->
+  
+<script src="js/menu.js"></script>
+</body>
+  
+<!-- InstanceEnd --></html>

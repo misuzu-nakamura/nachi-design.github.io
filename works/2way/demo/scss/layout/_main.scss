@@ -1,0 +1,72 @@
+/*layout-main*/
+
+.l-mainCont {
+  padding-top: 80px;
+  padding-bottom: 100px;
+
+  @include sp {
+    padding-top: 40px;
+  }
+}
+
+// .l-2col {
+//   display: flex;
+//   justify-content: space-between;
+
+//   @include pc {
+//     &__side {
+//       width: 27%;
+//     }
+//     &__main {
+//   width: 70%;
+//     }
+//   }
+
+//   @include sp {
+//     flex-wrap: wrap;
+
+//     .l-2col__side {
+//       width: 100%;
+//       margin: 0 auto;
+//     }
+
+//     .l-2col__main {
+//       @include sp {
+//           margin-top: 30px;
+//           width: 100%;
+//       }
+//   }
+//   }
+
+// }
+
+.l-inner {
+    width: 1200px;
+    margin: 0 auto;
+
+    @include pc {
+      max-width: 95%;
+    }
+
+    @include sp {
+      width: 100%;
+      padding: 0 5%;
+    }
+
+    &--sp {
+      @include sp {
+        width: 100%;
+        padding: 0 5%;
+      }
+    }
+}
+
+// .l-secCont {
+//   + .l-secCont {
+//     padding-top: 100px;
+
+//     @include sp {
+//       padding-top: 60px;
+//     }
+//   }
+// }
