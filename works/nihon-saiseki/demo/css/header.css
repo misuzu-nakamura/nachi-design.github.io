@@ -224,7 +224,7 @@
   }
   header .l-headerWrap nav {
     display: none;
-    background-color: rgba(44, 44, 44, 0.8);
+    background-color: rgba(44, 44, 44, 0.95);
     position: fixed;
     top: 0;
     width: 100%;
