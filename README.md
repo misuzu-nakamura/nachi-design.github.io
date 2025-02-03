@@ -1,2 +1,2 @@
-# misuzu-nakamura.github.io
+# nachi-design.github.io
 my portfolio
