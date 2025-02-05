@@ -49,20 +49,6 @@ const header = document.querySelector('.l-header');
 hbButton.addEventListener('click', () => {
   header.classList.toggle('is-active');
 
-// ページ遷移しない時にも、l-header__nav__linkとl-header__nav__childをクリックしたらハンバーガーメニューを閉じる
-  const navLinks = document.querySelectorAll('.l-header__nav__link');
-  navLinks.forEach(navLink => {
-    navLink.addEventListener('click', () => {
-      header.classList.remove('is-active');
-    });
-  });
-
-  const navChilds = document.querySelectorAll('.l-header__nav__child');
-  navChilds.forEach(navChild => {
-    navChild.addEventListener('click', () => {
-      header.classList.remove('is-active');
-    });
-  });
 });
 
 /*
