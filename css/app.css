@@ -54,6 +54,7 @@ body::after {
 
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 li {
@@ -431,7 +432,8 @@ other-page
 }
 @media screen and (max-width: 576px) {
   .l-other-page__ttl {
-    padding: 90px 2vw 50px;
+    padding: 90px 2vw 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1252,6 +1254,10 @@ styles
   text-decoration: underline;
 }
 
+.u-color-white {
+  color: #fff;
+}
+
 /*----------------
 
 component.scss
@@ -1802,9 +1808,9 @@ works.scss
   grid-template-columns: 1fr 1fr;
   gap: 70px;
 }
-.p-works__container__list--top {
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+.p-works__container__list--col3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 20px;
 }
 @media screen and (max-width: 768px) {
   .p-works__container__list {
@@ -1825,18 +1831,10 @@ works.scss
 .p-works__container__item__ttl {
   color: #fff;
   font-size: 1.6rem;
-  margin: 0.5em 0 1em;
+  margin-top: 0.5rem;
 }
-.p-works__container__item__tag-list {
-  display: flex;
-  gap: 1rem;
-}
-.p-works__container__item__tag-item {
+.p-works__container__item__tanto {
   font-size: 1.2rem;
-  color: #fff;
-  border: solid 1px #fff;
-  border-radius: 50px;
-  padding: 0.3rem 1rem;
 }
 .p-works__container__btn {
   text-align: right;
@@ -1865,7 +1863,16 @@ works.scss
   margin: 2rem 0;
 }
 .p-works__modal-contents__img {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+}
+.p-works__modal-contents__img__col2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  gap: 2rem;
+}
+.p-works__modal-contents__img--ban-for-sp figure {
+  max-width: 390px;
 }
 .p-works__modal-contents__img-head {
   margin-bottom: 0.5rem;
@@ -1907,6 +1914,9 @@ works.scss
   .p-works__modal-contents__ttl {
     font-size: 2rem;
   }
+  .p-works__modal-contents__img__col2 {
+    grid-template-columns: 1fr;
+  }
   .p-works__modal-contents__related__link {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -1922,7 +1932,7 @@ works.scss
   color: #605043;
   position: absolute;
   right: -1em;
-  bottom: -2em;
+  bottom: -4em;
 }
 @media screen and (max-width: 576px) {
   .p-works__modal-close {
@@ -1931,7 +1941,7 @@ works.scss
 }
 
 .p-top-page .p-works .p-works__container__list {
-  gap: 30px;
+  gap: 50px 30px;
 }
 
 .p-works-detail {
@@ -2013,7 +2023,7 @@ works.scss
 
 .modal__container {
   background-color: #fff;
-  padding: 50px;
+  padding: 50px 50px 70px;
   max-height: 90vh;
   overflow-y: auto;
   box-sizing: border-box;

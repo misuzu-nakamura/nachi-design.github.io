@@ -175,9 +175,9 @@ works.scss
         &__list {
             @include grid(1fr 1fr, 70px);
 
-            &--top {
-                grid-template-columns: repeat(4, 1fr);
-                gap: 15px;
+            &--col3 {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px 20px;
             }
 
             @include mq-max(md) {
@@ -201,20 +201,11 @@ works.scss
             &__ttl {
                 color: $white;
                 font-size: 1.6rem;
-                margin: 0.5em 0 1em;
+                margin-top: 0.5rem;
             }
 
-            &__tag-list {
-                display: flex;
-                gap: 1rem;
-            }
-
-            &__tag-item {
+            &__tanto {
                 font-size: 1.2rem;
-                color: $white;
-                border: solid 1px $white;
-                border-radius: 50px;
-                padding: 0.3rem 1rem;
             }
         }
 
@@ -251,7 +242,19 @@ works.scss
         }
 
         &__img {
-            margin-bottom: 2rem;
+            margin: 2rem 0;
+
+            //2カラム（PCのみ）
+            &__col2 {
+                @include grid();
+                gap: 2rem;
+            }
+
+            &--ban-for-sp {
+                figure {
+                    max-width: 390px;
+                }
+            }
         }
 
         &__img-head {
@@ -303,6 +306,12 @@ works.scss
                 font-size: 2rem;
             }
 
+            &__img {
+                &__col2 {
+                    grid-template-columns: 1fr;
+                }
+            }
+
             &__related {
                 &__link {
                     grid-template-columns: 1fr;
@@ -323,7 +332,7 @@ works.scss
         color: $dark-brown;
         position: absolute;
         right: -1em;
-        bottom: -2em;
+        bottom: -4em;
 
         @include mq-max(sm) {
             bottom: -3em;
@@ -336,7 +345,7 @@ works.scss
 .p-top-page {
     .p-works {
         .p-works__container__list {
-            gap: 30px;
+            gap: 50px 30px;
         }
     }
 }
