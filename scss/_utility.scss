@@ -11,6 +11,18 @@ margin,padding
 @for $i from 0 through 20 {
     .u-mat#{$i} {
         margin-top: #{$i}vh !important;
+
+        &-pc {
+            @include mq-min(sm) {
+                margin-top: #{$i}vh !important;
+            }
+        }
+
+        &-sp {
+            @include mq-max(sm) {
+                margin-top: #{$i}vh !important;
+            }
+        }
     }
 }
 
@@ -19,6 +31,18 @@ margin,padding
 @for $i from 0 through 20 {
     .u-mab#{$i} {
         margin-bottom: #{$i}vh !important;
+
+        &-pc {
+            @include mq-min(sm) {
+                margin-bottom: #{$i}vh !important;
+            }
+        }
+
+        &-sp {
+            @include mq-max(sm) {
+                margin-bottom: #{$i}vh !important;
+            }
+        }
     }
 }
 
@@ -43,6 +67,18 @@ margin,padding
 @for $i from 0 through 20 {
     .u-pat#{$i} {
         padding-top: #{$i}vh !important;
+
+        &-pc {
+            @include mq-min(sm) {
+                padding-top: #{$i}vh !important;
+            }
+        }
+
+        &-sp {
+            @include mq-max(sm) {
+                padding-top: #{$i}vh !important;
+            }
+        }
     }
 }
 
@@ -51,6 +87,18 @@ margin,padding
 @for $i from 0 through 20 {
     .u-pab#{$i} {
         padding-bottom: #{$i}vh !important;
+
+        &-pc {
+            @include mq-min(sm) {
+                padding-top: #{$i}vh !important;
+            }
+        }
+
+        &-sp {
+            @include mq-max(sm) {
+                padding-top: #{$i}vh !important;
+            }
+        }
     }
 }
 
