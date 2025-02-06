@@ -60,7 +60,7 @@ top.scss
         &__text {
             p {
                 font-size: 1.4rem;
-                line-height: 2.5;
+                line-height: 2;
             }
         }
     }
@@ -78,6 +78,15 @@ top.scss
             height: 100%;
             top: 0;
             left: 0;
+        }
+    }
+
+    @include mq-max(md) {
+        max-height: none;
+        height: 55vh;
+
+        .c-pallarax-bg__img {
+            background-image: url(../images/pallarax-bg_sp.webp);
         }
     }
 }
@@ -152,7 +161,7 @@ top.scss
         }
 
         &__img {
-            max-width: 280px;
+            max-width: 250px;
             margin: auto;
         }
 
