@@ -356,8 +356,8 @@ works.scss
 
     &__main {
         display: grid;
-        grid-template-columns: 2fr 3fr;
-        gap: 5rem;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
         margin-bottom: 10vh;
     }
 
@@ -404,6 +404,15 @@ works.scss
         &__main {
             grid-template-columns: 1fr;
         }
+
+        &__img {
+            margin-bottom: 2rem;
+
+            &--col2 {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     }
 
     @include mq-max(sm) {
@@ -413,13 +422,6 @@ works.scss
 
         &__main {
             margin-bottom: 5rem;
-        }
-
-        &__img {
-            margin-bottom: 2rem;
-            &--col2 {
-                gap: 5px;
-            }
         }
 
         &__more-info {
