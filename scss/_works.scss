@@ -152,6 +152,8 @@ works.scss
             margin-bottom: 5rem;
 
             &__text {
+                max-width: 670px;
+
                 p {
                     color: $white;
                 }
@@ -176,8 +178,11 @@ works.scss
             @include grid(1fr 1fr, 70px);
 
             &--col3 {
-                grid-template-columns: repeat(3, 1fr);
-                gap: 50px 20px;
+                @include grid(1fr 1fr 1fr, 50px 20px);
+            }
+
+            @media screen and (min-width: 1921px) {
+                @include grid(1fr 1fr 1fr, 50px 20px);
             }
 
             @include mq-max(md) {

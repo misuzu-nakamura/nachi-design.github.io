@@ -2636,6 +2636,9 @@ works.scss
   align-items: center;
   margin-bottom: 5rem;
 }
+.p-works__container__desc__text {
+  max-width: 670px;
+}
 .p-works__container__desc__text p {
   color: #fff;
 }
@@ -2658,8 +2661,16 @@ works.scss
   gap: 70px;
 }
 .p-works__container__list--col3 {
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px 20px;
+}
+@media screen and (min-width: 1921px) {
+  .p-works__container__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .p-works__container__list {
